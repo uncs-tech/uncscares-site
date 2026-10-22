@@ -15,6 +15,17 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        /* WHY: Flyer and campaign materials reference uncscares.org/wishlist —
+           redirect to the Amazon Gift List for the Deck the Halls campaign. */
+        source: "/wishlist",
+        destination: "https://www.amazon.com/registries/gl/guest-view/W9V0WKG8UBBW",
+        permanent: false, // WHY: temporary so we can repoint to future campaigns
+      },
+    ];
+  },
   async headers() {
     return [
       {

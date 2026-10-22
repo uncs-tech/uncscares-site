@@ -21,6 +21,7 @@ const FUND_LABELS: Record<string, string> = {
   dorm: "Destination Dorm",
   shoes: "4EveryKid & Soles4Souls",
   housing: "7 on 7th Affordable Housing",
+  deckthehalls: "Deck the Halls — Holiday Shelter Decorating",
 };
 
 export async function POST(request: NextRequest) {
