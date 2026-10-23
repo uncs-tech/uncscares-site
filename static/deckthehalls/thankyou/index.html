@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Thank You — Deck the Shelters | UNCS Cares Foundation</title>
+<meta name="description" content="Thank you for your generous donation to Deck the Shelters. Your support is transforming two Broward Partnership homeless shelters into winter wonderlands." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+SC:wght@300;400;600&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy:   #09144a;
+  --mid:    #1c3894;
+  --ice:    #eef5ff;
+  --silver: #c0d4ec;
+  --pearl:  #f6f9ff;
+  --dark:   #060d2e;
+  --gold:   #d4a843;
+  --gold-light: #e8c96a;
+  --green:  #2d8a4e;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Montserrat', system-ui, sans-serif;
+  background: var(--pearl);
+  color: var(--navy);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── HERO ── */
+.hero {
+  background: linear-gradient(175deg, var(--dark) 0%, #0c1e38 40%, #112a4a 70%, var(--dark) 100%);
+  color: #fff;
+  text-align: center;
+  padding: 80px 32px 60px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 25% 20%, rgba(30,80,140,0.3) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 40% at 80% 75%, rgba(120,40,60,0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero > * { position: relative; z-index: 1; }
+
+.check-circle {
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--green), #3aa85e);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 24px;
+  box-shadow: 0 0 40px rgba(45,138,78,0.3);
+}
+.check-circle svg {
+  width: 40px; height: 40px;
+  stroke: #fff; stroke-width: 3;
+  fill: none; stroke-linecap: round; stroke-linejoin: round;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 900; line-height: 1.1;
+  margin-bottom: 16px;
+}
+.hero h1 .gold {
+  background: linear-gradient(135deg, #ffd97a, #e8a830);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-message {
+  font-size: 18px; line-height: 1.7;
+  color: #b8cfdf; max-width: 620px;
+  margin: 0 auto;
+}
+.hero-message strong { color: #fff; }
+
+/* ── IMPACT ── */
+.impact {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 32px;
+  text-align: center;
+}
+.impact h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 700; margin-bottom: 12px;
+}
+.impact p {
+  font-size: 16px; color: #555;
+  line-height: 1.65; max-width: 560px;
+  margin: 0 auto 32px;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px; margin-bottom: 40px;
+}
+.impact-card {
+  background: var(--ice);
+  border-radius: 14px;
+  padding: 24px 16px;
+  text-align: center;
+}
+.impact-card .icon { font-size: 32px; margin-bottom: 8px; display: block; }
+.impact-card .label {
+  font-size: 14px; font-weight: 600;
+  color: var(--navy); line-height: 1.4;
+}
+
+/* ── SHARE ── */
+.share-section {
+  background: var(--ice);
+  padding: 48px 32px;
+  text-align: center;
+}
+.share-section h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px; font-weight: 700;
+  margin-bottom: 8px;
+}
+.share-section p {
+  font-size: 15px; color: #555;
+  margin-bottom: 20px;
+}
+.share-link {
+  display: inline-block;
+  background: var(--navy); color: #fff;
+  font-weight: 600; font-size: 15px;
+  padding: 10px 28px; border-radius: 8px;
+  text-decoration: none; margin: 0 6px 8px;
+  transition: background 0.2s;
+}
+.share-link:hover { background: var(--mid); }
+.share-link.gold { background: var(--gold); }
+.share-link.gold:hover { background: #c49835; }
+
+/* ── TAX ── */
+.tax-info {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 32px;
+  text-align: center;
+}
+.tax-info p {
+  font-size: 14px; color: #777;
+  line-height: 1.6;
+}
+.tax-info strong { color: var(--navy); }
+
+/* ── FOOTER ── */
+.footer {
+  margin-top: auto;
+  text-align: center; padding: 24px 32px;
+  font-size: 13px; color: #888;
+  border-top: 1px solid #e8e8e8;
+}
+.footer a { color: var(--mid); text-decoration: none; }
+
+@media (max-width: 600px) {
+  .impact-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="check-circle">
+    <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+  </div>
+  <h1>Thank You for <span class="gold">Making It Magical</span></h1>
+  <p class="hero-message">
+    Your generous donation to <strong>Deck the Shelters</strong> is helping us
+    transform two Broward Partnership homeless shelters into winter wonderlands.
+    Because of you, families and individuals will experience the
+    <strong>warmth and joy of the holiday season</strong>.
+  </p>
+</section>
+
+<!-- What your donation does -->
+<section class="impact">
+  <h2>Your Donation at Work</h2>
+  <p>
+    Every dollar goes directly to bringing holiday magic to the shelters.
+    Here's what we're creating together:
+  </p>
+  <div class="impact-grid">
+    <div class="impact-card">
+      <span class="icon">&#127876;</span>
+      <span class="label">Christmas trees with ornaments &amp; lights</span>
+    </div>
+    <div class="impact-card">
+      <span class="icon">&#10024;</span>
+      <span class="label">Glowing light-up walkway paths</span>
+    </div>
+    <div class="impact-card">
+      <span class="icon">&#127807;</span>
+      <span class="label">Lush garland &amp; wreaths throughout</span>
+    </div>
+    <div class="impact-card">
+      <span class="icon">&#10052;</span>
+      <span class="label">Hanging snowflakes &amp; winter decor</span>
+    </div>
+  </div>
+</section>
+
+<!-- Spread the word -->
+<section class="share-section">
+  <h3>Spread the Word</h3>
+  <p>Know someone who wants to help? Share the campaign.</p>
+  <a href="https://uncscares.org/deckthehalls" class="share-link gold">Share the Campaign Link</a>
+  <a href="https://uncscares.org/wishlist" class="share-link">Shop the Wish List</a>
+</section>
+
+<!-- Tax receipt info -->
+<section class="tax-info">
+  <p>
+    A tax receipt will be emailed to you from Stripe.
+    <strong>UNCS Cares Foundation</strong> is a 501(c)(3) nonprofit organization.
+    Your donation is tax-deductible to the fullest extent allowed by law.<br>
+    <strong>EIN #84-4044721</strong>
+  </p>
+</section>
+
+<!-- Footer -->
+<div class="footer">
+  <p>UNCS Cares Foundation &bull; 501(c)(3) &bull; EIN #84-4044721 &bull; <a href="/">uncscares.org</a> &bull; Fort Lauderdale, FL</p>
+</div>
+
+</body>
+</html>
